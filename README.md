@@ -21,6 +21,7 @@ Crie o arquivo *.env* no diretório raiz do projeto e altere os valores de acord
 
 ### 3. Criar base de dados e tabelas
 Execute no terminal os comandos:
+
     yarn sequelize db:create
     yarn sequelize db:migrate
 
