@@ -1,7 +1,9 @@
 const express = require('express');
 // ### !!! Trocar por require-dir !!! ### //
 const AddressController = require('./controllers/AddressController');
+const ReportController = require('./controllers/ReportController');
 const TechController = require('./controllers/TechController');
+
 const UserController = require('./controllers/UserController');
 
 const routes = express.Router();
@@ -14,5 +16,8 @@ routes.post('/users/:user_id/addresses', AddressController.store );
 
 routes.get('/users/:user_id/techs', TechController.index );
 routes.post('/users/:user_id/techs', TechController.store );
+routes.delete('/users/:user_id/techs', TechController.destroy );
+
+routes.get('/report', ReportController.show );
 
 module.exports = routes;
