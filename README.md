@@ -30,7 +30,3 @@ Execute no terminal os comandos:
 No terminal, execute no diretório raiz do projeto *npm run dev* ou *yarn dev*.
 
 #### Aplicação rodando! Bom proveito!
-
-
-
-
